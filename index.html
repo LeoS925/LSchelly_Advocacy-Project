@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Advocacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_Wr2oz3B78k9gJwsVA0JbdGabyY6V3fR7-pZw1OxwwX2IL1RcZHhhvxMC0hQYd3i0wI&usqp=CAU" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#campaigns">Campaigns</a></li>
+                <li><a href="#contact">Contact</a></li>  
+                <li><a id="theme-button">Toggle Dark Mode</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="header-box">
+                <h1>Political Advocacy</h1>
+                <p>Taking Action for a Better Future</p>
+                <div class="button-group flex-container">
+                    <button class="btn learn-more-btn">Learn More</button>
+                    <button class="btn join-us-btn">Join Us</button>
+                    <button class="btn donate-btn">Donate</button>
+                    <button class="btn contact-us-btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9luNWuymEtKDQD6YeC4BPMEwY97MqBKgTXw&s" alt="About Us" class="fade-in">
+            <p>In our society, we have scene absolutely horrendous presidencies and so much injustice overall. As the new generation we must stand on the right side of history no matter how much of a minority we may be. The future may seem bleak and that our presence won't change anything, but our own actions will help empower and support the future for change. I know that you will make the right choice and focus on a better tomorrow. We are dedicated to promoting political engagement and advocacy to create positive change in our community.</p>
+        </div>
+    </section>
+
+    <section id="campaigns">
+        <div class="container">
+            <h2>Our Campaigns</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVumvyS1yO5emaS7WwFk9QUeI_0rWDvyCAg&s" alt="Campaigns" class="fade-in">
+            <p>Explore our current campaigns and see how you can get involved.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZEEzvFAEonE-S8a--Up4GlZNe_zyY-A8Yg&s" alt="Contact Us" class="fade-in">
+            <p>Get in touch with us for more information or to get involved in our initiatives.</p>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.learn-more-btn').onclick = function() {
+            window.location.href = 'https://www.youtube.com/watch?v=c_g1BMVFcuw';
+        };
+
+        document.querySelector('.donate-btn').onclick = function() {
+            window.location.href = 'https://palestinecampaign.org/';
+        };
+    </script>
+    <audio id="background-music" autoplay loop>
+        <source src="Gil Scott Heron - The Revolution Will Not Be Televised.mp3" type="audio/mpeg">
+    </audio>
+    <button id="play-music">Play</button>
+    <button id="pause-music">Pause</button>
+    <button id="toggle-music">Toggle</button>
+    <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5">
+
+    <script src="script.js"></script>
+</body>
+</html>
